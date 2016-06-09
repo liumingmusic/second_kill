@@ -6,7 +6,7 @@ import org.seckill.dto.Exposer;
 import org.seckill.dto.SeckillExecution;
 import org.seckill.entity.SeckillEntity;
 import org.seckill.exception.RepeatKillException;
-import org.seckill.exception.SeckillCloseExecption;
+import org.seckill.exception.RobbedFinishedException;
 import org.seckill.exception.SeckillException;
 
 /**
@@ -64,5 +64,5 @@ public interface ISeckillService {
      * @see [类、类#方法、类#成员]
      */
     SeckillExecution executeSeckill(long seckillId, long userPhone, String md5)
-        throws SeckillException, SeckillCloseExecption, RepeatKillException;
+        throws SeckillException, RobbedFinishedException, RepeatKillException;
 }

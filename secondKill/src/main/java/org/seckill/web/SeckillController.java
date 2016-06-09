@@ -16,6 +16,7 @@ import org.seckill.dto.SeckillResult;
 import org.seckill.entity.SeckillEntity;
 import org.seckill.enums.SeckillStatEnum;
 import org.seckill.exception.RepeatKillException;
+import org.seckill.exception.RobbedFinishedException;
 import org.seckill.exception.SeckillCloseExecption;
 import org.seckill.service.ISeckillService;
 import org.slf4j.Logger;
@@ -145,14 +146,14 @@ public class SeckillController {
             return new SeckillResult<SeckillExecution>(true, execution);
         }
         // 3、提示用户相应的错误信息
+        catch (RobbedFinishedException e3) {
+            SeckillExecution execution = new SeckillExecution(seckillId,
+                SeckillStatEnum.ROBBED_FINISHED);
+            return new SeckillResult<SeckillExecution>(true, execution);
+        }
         catch (RepeatKillException e1) {
             SeckillExecution execution =
                 new SeckillExecution(seckillId, SeckillStatEnum.REPEAT_KILL);
-            return new SeckillResult<SeckillExecution>(true, execution);
-        }
-        catch (SeckillCloseExecption e2) {
-            SeckillExecution execution =
-                new SeckillExecution(seckillId, SeckillStatEnum.END);
             return new SeckillResult<SeckillExecution>(true, execution);
         }
         catch (Exception e) {

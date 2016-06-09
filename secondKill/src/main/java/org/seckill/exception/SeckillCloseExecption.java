@@ -10,7 +10,7 @@ package org.seckill.exception;
 /**
  * 
  * 〈一句话功能简述〉
- * 〈功能详细描述〉秒杀关闭异常
+ * 〈功能详细描述〉秒杀商品已经被抢完
  * 
  * @author liumingming
  * @version [版本号, 2016年6月2日]

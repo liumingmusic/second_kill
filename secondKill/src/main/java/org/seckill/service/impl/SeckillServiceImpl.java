@@ -18,6 +18,7 @@ import org.seckill.entity.SeckillEntity;
 import org.seckill.entity.SuccessKilledEntity;
 import org.seckill.enums.SeckillStatEnum;
 import org.seckill.exception.RepeatKillException;
+import org.seckill.exception.RobbedFinishedException;
 import org.seckill.exception.SeckillCloseExecption;
 import org.seckill.exception.SeckillException;
 import org.seckill.service.ISeckillService;
@@ -91,18 +92,18 @@ public class SeckillServiceImpl implements ISeckillService {
     @Transactional
     public SeckillExecution executeSeckill(long seckillId, long userPhone,
         String md5)
-        throws SeckillException, SeckillCloseExecption, RepeatKillException {
+        throws SeckillException, RobbedFinishedException, RepeatKillException {
         // 1、判断用户是否篡改MD5
         if (md5 == null || !md5.equals(getMD5(seckillId))) {
             throw new SeckillException("seckill data rewrite");
         }
-        // 2、执行秒杀逻辑
         Date nowTime = new Date();
+        // 2、执行秒杀逻辑
         try {
             int updateCount = seckillDao.reduceNumber(seckillId, nowTime);
             if (updateCount <= 0) {
-                // 秒杀没有执行成功，对于业务来说，秒杀已经关闭
-                throw new SeckillCloseExecption("seckill is closed");
+                // 秒杀没有执行成功，对于业务来说，秒杀商品已经被抢完
+                throw new RobbedFinishedException("seckill is closed");
             }
             else {
                 // 记录购买行为
