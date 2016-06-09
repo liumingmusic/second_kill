@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="3" failures="0" name="org.seckill.service.ISeckillServiceTest" time="0.078" errors="1" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/lib"/>
+    <property name="java.vm.version" value="25.40-b25"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/liumm/B_software/workspace/secondKill"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/liumm/B_software/workspace/secondKill"/>
+    <property name="java.runtime.version" value="1.8.0_40-b27"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/70/vkn2g6611bb6_wdg99qjx30r0000gn/T/"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="classworlds.conf" value="/Users/liumm/B_software/workspace/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf4812162488814383170.tmp"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/liumingming/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.11.5"/>
+    <property name="http.nonProxyHosts" value="local„ÄÅ169.254/16|*.local„ÄÅ169.254/16"/>
+    <property name="user.home" value="/Users/liumingming"/>
+    <property name="user.timezone" value="Asia/Shanghai"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="liumingming"/>
+    <property name="java.class.path" value="/Users/liumm/B_software/apache-maven-3.3.9/boot/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B -s /Users/liumm/B_software/apache-maven-3.3.9/conf/settings.xml clean compile package"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="zh"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_40"/>
+    <property name="java.ext.dirs" value="/Users/liumingming/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/Users/liumm/B_software/apache-maven-3.3.9"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local„ÄÅ169.254/16|*.local„ÄÅ169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local„ÄÅ169.254/16|*.local„ÄÅ169.254/16"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase classname="org.seckill.service.ISeckillServiceTest" name="testExportSeckillLogic" time="0.062">
+    <error message="seckill is closed" type="org.seckill.exception.SeckillCloseExecption">org.seckill.exception.SeckillCloseExecption: seckill is closed
+	at org.seckill.service.impl.SeckillServiceImpl.executeSeckill(SeckillServiceImpl.java:105)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:281)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
+	at com.sun.proxy.$Proxy25.executeSeckill(Unknown Source)
+	at org.seckill.service.ISeckillServiceTest.testExportSeckillLogic(ISeckillServiceTest.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:73)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:82)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:73)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:224)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:83)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:68)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:163)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+    <system-out>22:35:56.582 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Find JAR URL: file:/Users/liumm/B_software/workspace/secondKill/target/classes/org/seckill/entity
+22:35:56.582 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Not a JAR: file:/Users/liumm/B_software/workspace/secondKill/target/classes/org/seckill/entity
+22:35:56.583 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Reader entry: SeckillEntity.class
+22:35:56.583 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Reader entry: SuccessKilledEntity.class
+22:35:56.584 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Listing file:/Users/liumm/B_software/workspace/secondKill/target/classes/org/seckill/entity
+22:35:56.584 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Find JAR URL: file:/Users/liumm/B_software/workspace/secondKill/target/classes/org/seckill/entity/SeckillEntity.class
+22:35:56.584 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Not a JAR: file:/Users/liumm/B_software/workspace/secondKill/target/classes/org/seckill/entity/SeckillEntity.class
+22:35:56.585 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;[
+22:35:56.585 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Find JAR URL: file:/Users/liumm/B_software/workspace/secondKill/target/classes/org/seckill/entity/SuccessKilledEntity.class
+22:35:56.585 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Not a JAR: file:/Users/liumm/B_software/workspace/secondKill/target/classes/org/seckill/entity/SuccessKilledEntity.class
+22:35:56.586 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Reader entry: ����&amp;#0;&amp;#0;&amp;#0;4&amp;#0;U
+22:35:56.586 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class org.seckill.entity.SeckillEntity matches criteria [is assignable to Object]
+22:35:56.586 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class org.seckill.entity.SuccessKilledEntity matches criteria [is assignable to Object]
+22:35:56.586 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Scanned package: &apos;org.seckill.entity&apos; for aliases
+22:35:56.590 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed configuration file: &apos;class path resource [mybatis-config.xml]&apos;
+22:35:56.600 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: &apos;file [/Users/liumm/B_software/workspace/secondKill/target/classes/mapper/SeckillDaoMapper.xml]&apos;
+22:35:56.608 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: &apos;file [/Users/liumm/B_software/workspace/secondKill/target/classes/mapper/SuccessSeckilledDaoMapper.xml]&apos;
+22:35:56.662 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+22:35:56.662 [main] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@78641d23] was not registered for synchronization because synchronization is not active
+22:35:56.694 [main] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@1869fbd2] will not be managed by Spring
+22:35:56.694 [main] DEBUG o.seckill.dao.ISeckillDao.queryById - ==&gt;  Preparing: select seckill_id, name, number, start_time, end_time, create_time from seckill where seckill_id = ? 
+22:35:56.694 [main] DEBUG o.seckill.dao.ISeckillDao.queryById - ==&gt; Parameters: 1000(Long)
+22:35:56.698 [main] DEBUG o.seckill.dao.ISeckillDao.queryById - &lt;==      Total: 1
+22:35:56.698 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@78641d23]
+22:35:56.700 [main] INFO  o.s.service.ISeckillServiceTest - exposer=Exposer [exposed=true, md5=094c704b3786ac114f9c20aae05ffb5e, seckillId=1000, now=0, start=0, end=0]
+22:35:56.710 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+22:35:56.711 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1603cd68]
+22:35:56.712 [main] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@3cdf2c61] will be managed by Spring
+22:35:56.712 [main] DEBUG o.s.dao.ISeckillDao.reduceNumber - ==&gt;  Preparing: update seckill set number = number - 1 where seckill_id = ? and start_time &lt;= ? and end_time &gt;= ? and number &gt; 0; 
+22:35:56.713 [main] DEBUG o.s.dao.ISeckillDao.reduceNumber - ==&gt; Parameters: 1000(Long), 2016-06-09 22:35:56.71(Timestamp), 2016-06-09 22:35:56.71(Timestamp)
+22:35:56.714 [main] DEBUG o.s.dao.ISeckillDao.reduceNumber - &lt;==    Updates: 0
+22:35:56.715 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1603cd68]
+22:35:56.716 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1603cd68]
+22:35:56.716 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1603cd68]
+</system-out>
+    <system-err>六月 09, 2016 10:35:56 下午 org.springframework.test.context.support.DefaultTestContextBootstrapper getDefaultTestExecutionListenerClassNames
+信息: Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+六月 09, 2016 10:35:56 下午 org.springframework.test.context.support.DefaultTestContextBootstrapper getTestExecutionListeners
+信息: Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1cb346ea, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@4c012563, org.springframework.test.context.support.DirtiesContextTestExecutionListener@14a50707, org.springframework.test.context.transaction.TransactionalTestExecutionListener@4d518b32, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@4bd31064]
+六月 09, 2016 10:35:56 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+信息: Loading XML bean definitions from class path resource [spring/spring-dao.xml]
+六月 09, 2016 10:35:56 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+信息: Loading XML bean definitions from class path resource [spring/spring-service.xml]
+六月 09, 2016 10:35:56 下午 org.springframework.context.support.GenericApplicationContext prepareRefresh
+信息: Refreshing org.springframework.context.support.GenericApplicationContext@e3c0e40: startup date [Thu Jun 09 22:35:56 CST 2016]; root of context hierarchy
+六月 09, 2016 10:35:56 下午 org.springframework.context.support.PropertySourcesPlaceholderConfigurer loadProperties
+信息: Loading properties file from class path resource [jdbc.properties]
+六月 09, 2016 10:35:56 下午 com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource getPoolManager
+信息: Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -&gt; 3, acquireRetryAttempts -&gt; 2, acquireRetryDelay -&gt; 1000, autoCommitOnClose -&gt; false, automaticTestTable -&gt; null, breakAfterAcquireFailure -&gt; false, checkoutTimeout -&gt; 1000, connectionCustomizerClassName -&gt; null, connectionTesterClassName -&gt; com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -&gt; 1hge1389hevazpl1cdykjk|8e50104, debugUnreturnedConnectionStackTraces -&gt; false, description -&gt; null, driverClass -&gt; com.mysql.jdbc.Driver, factoryClassLocation -&gt; null, forceIgnoreUnresolvedTransactions -&gt; false, identityToken -&gt; 1hge1389hevazpl1cdykjk|8e50104, idleConnectionTestPeriod -&gt; 0, initialPoolSize -&gt; 3, jdbcUrl -&gt; jdbc:mysql://127.0.0.1:3306/seckill?useUnicode=true&amp;characterEncoding=utf8, maxAdministrativeTaskTime -&gt; 0, maxConnectionAge -&gt; 0, maxIdleTime -&gt; 0, maxIdleTimeExcessConnections -&gt; 0, maxPoolSize -&gt; 30, maxStatements -&gt; 0, maxStatementsPerConnection -&gt; 0, minPoolSize -&gt; 10, numHelperThreads -&gt; 3, numThreadsAwaitingCheckoutDefaultUser -&gt; 0, preferredTestQuery -&gt; null, properties -&gt; {user=******, password=******}, propertyCycle -&gt; 0, testConnectionOnCheckin -&gt; false, testConnectionOnCheckout -&gt; false, unreturnedConnectionTimeout -&gt; 0, usesTraditionalReflectiveProxies -&gt; false ]
+</system-err>
+  </testcase>
+  <testcase classname="org.seckill.service.ISeckillServiceTest" name="testGetById" time="0.005"/>
+  <testcase classname="org.seckill.service.ISeckillServiceTest" name="testGetSeckillList" time="0.011"/>
+</testsuite>
